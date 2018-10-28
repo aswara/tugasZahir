@@ -1,32 +1,126 @@
-.App {
-  text-align: center;
+
+body {
+  background-color: #f4f8f9;
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.container {
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.tombol {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #82bdff;
+  border: 1px solid #82bdff;
+  font-size: 12px;
+}
+
+.tombol:hover {
   color: white;
+  background-color: #82bdff;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Sidebar kiri */
+.sidebar {
+  border: 1px solid #e7e9ea;
+  position: fixed;
+  height: 100%;
+  width: 88px;
+  left: 0;
+  top: 0;
+  background-color: #fafbfc;
+  z-index: 20;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sidebar a {
+  text-decoration: none;
+  display: block;
+}
+
+/*Haeder */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  height: 85px;
+  background-color: #fafbfc;
+  border: 1px solid #e7e9ea;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+
+
+.find input {
+  margin-left: 100px;
+  padding: 10px;
+  width: 300px;
+  background-color: #fafbfc;
+  border: 0;
+  font-size: 16px;
+}
+
+.find input::placeholder {
+  color: #c8c9c9;
+  font-size: 16px;
+}
+
+.find input:focus {
+  outline: none;
+}
+
+.user {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.user a {
+  margin-right: 30px;
+}
+
+.user img {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+
+/* Status */
+.status {
+  position: fixed;
+  right: 0;
+  background-color: #fcfdfd;
+  height: 100%;
+  width: 215px;
+}
+
+.status .tanggal {
+  padding: 20px;
+}
+
+.status hr {
+  height: 5px;
+  background-color: #82bdff;
+  width: 50%;
+  margin-left: 0;
+  border-radius: 3px;
+}
+
+
+
+/* Tampilan mobile */
+@media (max-width:700px) {
+  .sidebar {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .status {
+    display: none;
   }
 }

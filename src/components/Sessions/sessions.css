@@ -1,0 +1,346 @@
+/* Session */
+.session {
+    margin-top: 88px;
+    margin-left: 110px;
+    margin-right: 241px;
+    width: auto;
+    padding: 30px 35px;
+  }
+  
+  .judul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .judul-session {
+    display: flex;
+    align-items: center;
+  }
+
+  .judul-session h1 {
+      font-weight: 400;
+      font-size: 33px;
+  }
+  
+  .judul-session a {
+    margin-left: 45px;
+  }
+  
+  .card-table {
+    background-color: #eff4f6;
+    padding: 15px 10px;
+  }
+  
+  .card-table a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    color: #c7c9cb;
+  }
+
+  .card-table .pilih {
+      background-color: white;
+      color: #333d4b;
+      border-radius: 5px;
+  }
+
+
+
+
+
+/* cart atas */
+.card-atas {
+    display: flex;
+    margin-top: 15px;
+    box-shadow: 2px 2px 50px #f3f7f8;
+}
+.isi-card-atas {
+    background-color: #ffffff;
+    margin-right: 25px;
+    width: 227px;
+    padding: 15px 22px 7px;;
+}
+
+.isi-card-atas p {
+    font-size: 12.5px;
+    color: #333d4b;
+}
+
+.isi-card-atas .titik {
+    float: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: #dde3e7;
+    cursor: pointer;
+    margin-top: -7px;
+}
+
+.isi-card-atas .card-tanggal span {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.isi-card-atas .card-tanggal {
+    color: #adb1b5;
+}
+
+
+
+
+
+
+/* Hari dan tanggal */
+.tanggal-hari {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.tanggal-hari p {
+    font-size: 15px;
+    color: #333d4b;
+}
+
+.tanggal-hari .tanggal {
+    font-weight: bold;
+}
+
+.tanggal-hari .th {
+    font-size: 12px;
+}
+
+.tanggal-hari hr {
+    background-color: #4da1ff;
+    height: 4px;
+    border-radius: 4px;
+    width: 50px;
+    margin-left: 0;
+    border: 0;
+}
+
+
+
+/* Tampilan Data User */
+
+.data-user img {
+    height: 66px;
+    width: 66px;
+    border-radius: 33px;
+}
+
+.data-user h4 {
+    font-weight: 500;
+    color: #323c47;
+    font-size: 15px;
+}
+
+.data-user .email {
+    font-size: 12px;
+    color: #9ba0a6;
+}
+
+.data-user .pekerjaan {
+    font-size: 13px;
+    color: #838990;
+}
+
+
+
+/* Tampilan Card */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card .list-user {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 2px 2px 50px #f3f7f8;
+    padding: 30px 30px;
+    flex: 1 1 1;
+}
+
+.card .data-user {
+    display: flex;
+}
+
+.card .data-user .nama {
+    margin-left: 20px;
+}
+
+.card .data-user .email {
+    margin-top: -15px;
+}
+
+.card .data-user .pekerjaan {
+    margin-top: 0px;
+}
+
+
+.card h4 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-top: -8px;
+}
+
+.card .aktifitas {
+    margin-top: 15px;
+    border: 1px solid #e9eff4;
+    border-radius: 10px;
+}
+
+.card .invites-pending {
+    display: flex;
+    flex: 1;
+}
+
+.card .invites-pending div {
+    flex: 1;
+    border-bottom: 1px solid #e9eff4;
+    padding: 10px 20px;
+    height: 40px;
+    width: 65px;
+}
+
+.card .invites-pending h5 {
+    font-size: 12px;
+}
+
+.card .invites {
+    border-right: 1px solid #e9eff4;
+}
+
+.card .invites h4 {
+    margin-top: -15px;
+    color: #4da1ff;
+}
+
+.card .pending h4 {
+    margin-top: -15px;
+    color: #ff6d4a;
+    margin-left: 20px;
+}
+
+.card .pending span {
+    position: absolute;
+    color: #ff6d4a;
+    font-size: 60px;
+    margin-top: -57px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card .invites-pending h5 {
+    margin-top: 0;
+    color: #36404b;
+    font-weight: 400;
+}
+
+.card .invites-pending h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
+/* Tampilan table */
+.table {
+    display: flex;
+    flex-direction: column;
+}
+
+.table .list-user{
+    background-color: white;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 2px 2px 50px #f3f7f8;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.table .data-user {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.table .data-user .nama {
+    display: flex;
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.table .data-user .nama .email {
+    margin-top: -14px;
+}
+
+.table .data-user .nama .pekerjaan {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.table .aktifitas {
+    flex: 1;
+    display: flex;
+}
+
+.table .invites-pending {
+    padding: 10px;
+    display: flex;
+    flex: 1;
+}
+
+.table .invites-pending div {
+    padding: 10px;
+    display: flex;
+    flex: 1;
+}
+
+.table .invites {
+    margin-top: -7px;
+}
+
+.table .invites h4 {
+    color: #4da1ff;
+    margin-left: 10px;
+    margin-top: 16px;
+}
+
+.table .pending {
+    margin-top: -7px;
+}
+
+.table .pending h4 {
+    color: #ff6d4a;
+   margin-left: 5px;
+   margin-top: 18px;
+}
+
+.table .pending span {
+    margin-top: -23px;
+    margin-left: 15px;
+    color: #ff6d4a;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.table .invites-pending h5 {
+    color: #36404b;
+    font-weight: 400;
+}
+
+.table .invites-pending h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.table .cart {
+    display: none;
+}
