@@ -30,7 +30,19 @@
     margin: 100px 28%;
     background-color: white;
     padding: 25px;
+    animation: export 1s ease-in-out;
 }
+
+@keyframes export {
+    0%{
+      top: -500px;
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+      top: 0;
+    }    
+  }
 
 .export h5 {
     margin-top: 0;
