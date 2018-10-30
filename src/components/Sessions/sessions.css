@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   .judul-session {
@@ -29,13 +30,13 @@
   
   .card-table {
     background-color: #eff4f6;
-    padding: 15px 10px;
+    padding: 13px 5px;
   }
   
   .card-table a {
     text-decoration: none;
     padding: 10px;
-    font-size: 15px;
+    font-size: 12px;
     color: #c7c9cb;
   }
 
@@ -45,6 +46,13 @@
       border-radius: 5px;
   }
 
+.card-table .pilih i {
+    color: #4da1ff;
+}
+
+.tidak-aktif {
+    opacity: 0.4;
+}
 
 
 
@@ -53,13 +61,31 @@
 .card-atas {
     display: flex;
     margin-top: 15px;
-    box-shadow: 2px 2px 50px #f3f7f8;
+    flex-wrap: wrap;
+    
 }
+
+@keyframes chart {
+    0%{
+      margin-left: -200px;
+      opacity: 0;
+    }
+    50%{
+      margin-left: 80px;
+    }
+    100%{
+      margin-left: 0;
+      opacity: 1;
+    }
+  }
+
 .isi-card-atas {
     background-color: #ffffff;
-    margin-right: 25px;
     width: 227px;
-    padding: 15px 22px 7px;;
+    margin-right: 25px;
+    padding: 15px 22px 7px;
+    box-shadow: 2px 2px 50px #f3f7f8;
+    animation: chart 1s ease-in-out;
 }
 
 .isi-card-atas p {
@@ -85,9 +111,13 @@
     color: #adb1b5;
 }
 
+.isi-card-atas .card-tanggal .biru {
+    color: #4da1ff;
+}
 
-
-
+.isi-card-atas .card-tanggal .orange {
+    color: #ff6d4a;
+}
 
 
 /* Hari dan tanggal */
@@ -151,14 +181,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  
+}
+
+@keyframes card {
+    0%{
+        opacity: 0;
+        margin-left: -1000px;
+    }
+    50%{
+        margin-right: -50px;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0;
+    }
 }
 
 .card .list-user {
+    animation: card 1s ease-in-out;
     background-color: white;
     border-radius: 7px;
     box-shadow: 2px 2px 50px #f3f7f8;
     padding: 30px 30px;
     flex: 1 1 1;
+    margin-bottom: 25px;
 }
 
 .card .data-user {
@@ -201,7 +248,7 @@
     flex: 1;
     border-bottom: 1px solid #e9eff4;
     padding: 10px 20px;
-    height: 40px;
+    height: 36px;
     width: 65px;
 }
 
@@ -243,16 +290,38 @@
     font-weight: 400;
 }
 
-
+.card .chart p {
+    font-size: 12px;
+    margin-top: 11px;
+    margin-left: 15px;
+    color: #36404b;
+}
 
 
 /* Tampilan table */
 .table {
     display: flex;
     flex-direction: column;
+   
 }
 
+@keyframes table {
+    0%{
+      margin-top: 900px;
+      opacity: 0;
+      margin-bottom: 200px;
+    }
+    50%{
+      margin-top: -100px;
+    }
+    100%{
+      opacity: 1;
+      margin-top: 0;
+    }
+  }
+
 .table .list-user{
+    animation: table 1s ease-in-out;
     background-color: white;
     width: 100%;
     border-radius: 7px;
@@ -261,6 +330,7 @@
     display: flex;
     align-items: center;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .table .data-user {
@@ -275,6 +345,7 @@
     flex: 1;
     margin-left: 20px;
     margin-top: 0px;
+    flex-wrap: wrap;
 }
 
 .table .data-user .nama .email {
@@ -341,6 +412,52 @@
     font-weight: 400;
 }
 
-.table .cart {
+.table .chart {
     display: none;
 }
+
+
+/* Tampilan mobile */
+@media (max-width:700px) {
+    .session {
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+        
+    }
+    
+    .isi-card-atas {
+        margin-right: 0;
+        align-content: center;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .card .list-user{
+        animation: list 1s ease-in-out;
+    }
+
+    @keyframes list {
+        0%{
+            margin-top: -500px;
+            opacity: 0;
+        }
+        50%{
+            margin-top: 50px;
+        }
+        100%{
+            opacity: 1;
+            margin-top: 0;
+        }
+    }
+
+    .card {
+        justify-content: center;
+    }
+
+    .table .list-user .nama {
+        margin-top: 20px;
+    } 
+}
+  

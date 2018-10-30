@@ -10,13 +10,10 @@ class Export extends Component {
         this.props.hidden()
     }
 
-    export = () => {
-        console.log("export")
-    }
-
     render() {
         return (
-            <div onClick={this.hidden} className={this.props.style}>
+            <div className={this.props.style}>
+                <div onClick={this.hidden} className="transparant"></div>
                 <div onClick={this.export} className="export">
                     <h5>EXPORT</h5>
                     <div className="tipe-file">

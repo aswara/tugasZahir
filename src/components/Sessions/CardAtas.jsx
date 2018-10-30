@@ -6,7 +6,7 @@ export default function CardAtas(props) {
             <span className="titik">...</span>
             <p>{props.judul}</p>
             <p className="card-tanggal">
-            <span>{props.tanggal}</span>
+            <span className={props.style}>{props.tanggal}</span>
             This month</p>
         </div>
     );
