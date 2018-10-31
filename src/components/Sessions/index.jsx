@@ -93,17 +93,17 @@ class Session extends Component {
                 <div className="judul">
                    <div className="judul-session">
                     <h1>Sessions</h1>
-                    <a className="tombol" onClick={this.export} href="#"><i className="demo-icon icon-download">&#xf02e;</i> Export</a>
+                    <span className="tombol" onClick={this.export} href="#"><i className="demo-icon icon-download">&#xf02e;</i> Export</span>
                    </div>
                    <div className="card-table">
-                    <a className={this.state.tampilan == "card" ? "pilih" : ""} onClick={this.tampilanCard} href="#"><i className="demo-icon icon-th-large-outline">&#xe807;</i> Cards</a>
-                    <a className={this.state.tampilan == "table" ? "pilih" : ""} onClick={this.tampilanTable} href="#"><i className="demo-icon icon-menu-outline">&#xe808;</i> Table</a>
+                    <span className={this.state.tampilan === "card" ? "pilih" : ""} onClick={this.tampilanCard} href="#"><i className="demo-icon icon-th-large-outline">&#xe807;</i> Cards</span>
+                    <span className={this.state.tampilan === "table" ? "pilih" : ""} onClick={this.tampilanTable} href="#"><i className="demo-icon icon-menu-outline">&#xe808;</i> Table</span>
                    </div>
                 </div>
 
                 <div className="card-atas">
-                    <CardAtas style="biru" judul="Number of sessions" tanggal="23" />
-                    <CardAtas style="orange" judul="Users who haven't answered" tanggal="06" />
+                    <CardAtas data={{style: 'biru', judul:'Number of sessions', tanggal:'23'}} />
+                    <CardAtas data={{style: 'orange', judul:"Users who haven't answered", tanggal:'06'}} />
                 </div>
 
                 <div className="tanggal-hari">

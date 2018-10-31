@@ -3,6 +3,29 @@ import lonceng from '../../components/asset/lonceng.svg';
 import Message from './Messages';
 
 class Status extends Component {
+    state = {
+        pesanUser: [
+            {
+                style : 'coret',
+                jam : '9:45',
+                pesan : 'Reply to Debie Wilhelm'
+            },
+            {
+                style : 'aktif',
+                jam : '9:59',
+                pesan : 'New invitation from Julie'
+            },
+            {
+                jam : '10:30',
+                pesan : 'Wireframes with Josh'
+            },
+            {
+                jam : '12:45',
+                pesan : 'Follow up on Wireframes and Design'
+            },
+        ]
+    }
+
     render() {
         return (
             <div className={`status ${this.props.style}`} >
@@ -16,10 +39,11 @@ class Status extends Component {
                         <p>14 February</p>
                     </div>
                 </div>
-                <Message style="coret" jam="9:45" pesan="Reply to Debie Wilhelm" />
-                <Message style="aktif" jam="9:59" pesan="New invitation from Julie" />
-                <Message jam="10:30" pesan="Wireframes with Josh" />
-                <Message jam="12:45" pesan="Follow up on Wireframes and Design" />
+                {
+                    this.state.pesanUser.map((user,index)=>
+                    <Message key={index} data={user} />
+                    )
+                }
             </div>
         );
     }

@@ -15,7 +15,7 @@ class Header extends Component {
                     
                 </div>
                 <div className="user">
-                    <a className="tombol" href="#"><i className="demo-icon icon-paper-plane">&#xe80b;</i> Invite</a>
+                    <span className="tombol" href="#"><i className="demo-icon icon-paper-plane">&#xe80b;</i> Invite</span>
                     <img src={user} alt="user"/>
                     {
                         this.props.style === "show-status" ? 

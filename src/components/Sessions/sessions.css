@@ -24,7 +24,7 @@
       font-size: 33px;
   }
   
-  .judul-session a {
+  .judul-session span {
     margin-left: 45px;
   }
   
@@ -33,7 +33,7 @@
     padding: 13px 5px;
   }
   
-  .card-table a {
+  .card-table span {
     text-decoration: none;
     padding: 10px;
     font-size: 12px;

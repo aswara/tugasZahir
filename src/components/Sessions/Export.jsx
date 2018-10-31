@@ -37,9 +37,9 @@ class Export extends Component {
                     <h5>Save To</h5>
                     <div className="folder">
                         <span>Folder</span>
-                        <a className="tombol" href="#">Send</a>
+                        <span className="tombol" href="#">Send</span>
                     </div>
-                    <a className="tombol-export" href="#">Export</a>
+                    <span className="tombol-export" href="#">Export</span>
                 </div>
             </div>
         );
