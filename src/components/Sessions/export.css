@@ -30,7 +30,7 @@
     margin: 100px 28%;
     background-color: white;
     padding: 25px;
-    animation: export 1s ease-in-out;
+    animation: export 0.5s ease-in-out;
 }
 
 @keyframes export {

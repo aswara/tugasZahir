@@ -59,7 +59,7 @@ body {
 .sidebar img {
   width: 26px;
   margin-top: 22px;
-  animation: logo 1s ease-in-out;
+  animation: logo 1.5s ease-in-out;
 }
 
 @keyframes logo {

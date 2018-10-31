@@ -302,7 +302,6 @@
 .table {
     display: flex;
     flex-direction: column;
-   
 }
 
 @keyframes table {
@@ -432,6 +431,7 @@
         align-content: center;
         margin-bottom: 25px;
         width: 100%;
+        animation: none;
     }
 
     .card .list-user{
@@ -440,11 +440,11 @@
 
     @keyframes list {
         0%{
-            margin-top: -500px;
+            margin-top: -300px;
             opacity: 0;
         }
         50%{
-            margin-top: 50px;
+            margin-top: 100px;
         }
         100%{
             opacity: 1;
