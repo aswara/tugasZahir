@@ -20,6 +20,7 @@ body {
 .tombol:hover {
   color: white;
   background-color: #82bdff;
+  cursor: pointer;
 }
 
 

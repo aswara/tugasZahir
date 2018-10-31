@@ -38,6 +38,7 @@
     padding: 10px;
     font-size: 12px;
     color: #c7c9cb;
+    cursor: pointer;
   }
 
   .card-table .pilih {
