@@ -15,10 +15,8 @@ class App extends Component {
       switch(state.status) {
         case 'awal-status':
           return {status: 'show-status' }
-          break;
         case 'show-status':
           return {status: 'hidden-status'}
-          break;
         default:
           return {status: 'show-status'}
       }
