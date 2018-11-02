@@ -87,6 +87,7 @@
     padding: 15px 22px 7px;
     box-shadow: 2px 2px 50px #f3f7f8;
     animation: chart 1s ease-in-out;
+    margin-bottom: 17px;
 }
 
 .isi-card-atas p {
@@ -123,12 +124,12 @@
 
 /* Hari dan tanggal */
 .tanggal-hari {
-    margin-top: 25px;
+    margin-top: 0px;
     margin-bottom: 25px;
 }
 
 .tanggal-hari p {
-    font-size: 15px;
+    font-size: 13px;
     color: #333d4b;
 }
 
@@ -181,8 +182,7 @@
 .card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-  
+    margin-right: -50px;
 }
 
 @keyframes card {
@@ -191,7 +191,8 @@
         margin-left: -1000px;
     }
     50%{
-        margin-right: -50px;
+        margin-right: -100px;
+        margin-left: 100px;
     }
     100%{
         opacity: 1;
@@ -200,12 +201,12 @@
 }
 
 .card .list-user {
+    margin-right: 25px;
     animation: card 1s ease-in-out;
     background-color: white;
     border-radius: 7px;
     box-shadow: 2px 2px 50px #f3f7f8;
     padding: 30px 30px;
-    flex: 1 1 1;
     margin-bottom: 25px;
 }
 
@@ -437,6 +438,7 @@
 
     .card .list-user{
         animation: list 1s ease-in-out;
+        margin-right: 0;
     }
 
     @keyframes list {
@@ -455,6 +457,7 @@
 
     .card {
         justify-content: center;
+        margin-right: 0;
     }
 
     .table .list-user .nama {
